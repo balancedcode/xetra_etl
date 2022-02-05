@@ -10,8 +10,8 @@ def main():
         entry point to run the xetra ETL job.
     """
     # Parsing YAML file
-    config = './configs/xetra_report1_config.yml'
-    config = yaml.safe_load(open(config))
+    config_path = './configs/xetra_report1_config.yml'
+    config = yaml.safe_load(open(config_path))
     # configure logging
     log_config = config['logging']
     logging.config.dictConfig(log_config)
